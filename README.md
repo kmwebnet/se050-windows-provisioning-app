@@ -31,7 +31,7 @@ The app is written in C++ and uses the Plug and Trust Middleware from NXP. The P
     - [FireDaemon OpenSSL 3](https://download.firedaemon.com/FireDaemon-OpenSSL/FireDaemon-OpenSSL-x64-3.1.2.exe)
 
 2. **Compiling**:
-    - Download the latest release from the [GitHub](#).
+    - Download the latest release from the [GitHub](https://github.com/kmwebnet/se050-windows-provisioning-app).
     - Unzip and place the Plug and Trust MIddleware in this directory.
     - Build on Visual Studio 2022. upon success, compiled app named se050provisioning.exe will be generated on build\x64.
     
