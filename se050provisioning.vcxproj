@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{348e0e70-3f22-4f1b-b46b-ff9931475289}</ProjectGuid>
+    <RootNamespace>se050provisioning</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>se050provisioning</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Build\x64</OutDir>
+    <ExcludePath>$(SolutionDir)simw-top\sss\plugin\pkcs11;$(ExcludePath)</ExcludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;T1oI2C;SSS_USE_FTR_FILE;T1oI2C_UM11225;_CRT_SECURE_NO_WARNINGS;PKCS11_LIBRARY;PKCS11_SESSION_OPEN;MBEDTLS_CMAC_C;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)simw-top\hostlib\hostLib\se05x_03_xx_xx;$(SolutionDir)simw-top\hostlib\hostLib\libCommon\infra;$(SolutionDir)simw-top\hostlib\hostLib\inc;$(SolutionDir)simw-top\hostlib\hostLib\libCommon\log;$(SolutionDir)LibFT260\inc;$(SolutionDir)simw-top\sss\ex\inc;$(SolutionDir)simw-top\sss\port\default;$(SolutionDir)simw-top\sss\inc;$(SolutionDir)simw-top\hostlib\hostLib\libCommon\smCom;$(SolutionDir)simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C;$(SolutionDir)simw-top\ext\mbedtls\include;$(SolutionDir)simw-top\hostlib\hostLib\platform\inc;$(SolutionDir)src;$(SolutionDir)simw-top\sss\ex\src;$(SolutionDir)simw-top\demos\linux\sss_pkcs11\include;$(SolutionDir)simw-top\ext\amazon-freertos\libraries\3rdparty\pkcs11;$(SolutionDir)simw-top\sss\plugin\mbedtls;$(PROGRAMFILES)\FireDaemon OpenSSL 3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\LibFT260\lib\amd64;$(PROGRAMFILES)\FireDaemon OpenSSL 3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibFT260.lib;libcrypto.lib;libssl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="simw-top\ext\mbedtls\library\aes.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\aesni.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\arc4.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\aria.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\asn1parse.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\asn1write.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\base64.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\bignum.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\blowfish.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\camellia.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ccm.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\certs.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\chacha20.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\chachapoly.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\cipher.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\cipher_wrap.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\cmac.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ctr_drbg.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\debug.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\des.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\dhm.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ecdh.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ecdsa.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ecjpake.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ecp.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ecp_curves.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\entropy.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\entropy_poll.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\error.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\gcm.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\havege.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\hkdf.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\hmac_drbg.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\md.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\md2.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\md4.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\md5.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\memory_buffer_alloc.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\net_sockets.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\nist_kw.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\oid.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\padlock.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\pem.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\pk.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\pkcs11.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\pkcs12.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\pkcs5.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\pkparse.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\pkwrite.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\pk_wrap.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\platform.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\platform_util.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\poly1305.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\psa_its_file.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ripemd160.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\rsa.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\rsa_internal.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\sha1.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\sha256.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\sha512.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_cache.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_ciphersuites.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_cli.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_cookie.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_msg.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_srv.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_ticket.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_tls.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\ssl_tls13_keys.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\threading.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\timing.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\version.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\version_features.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\x509.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\x509write_crt.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\x509write_csr.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\x509_create.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\x509_crl.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\x509_crt.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\x509_csr.c" />
+    <ClCompile Include="simw-top\ext\mbedtls\library\xtea.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\infra\cm_commands.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\infra\global_platf.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\infra\sm_apdu.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\infra\sm_app_boot.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\infra\sm_connect.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\infra\sm_errors.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\infra\sm_printf.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\log\nxLog.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\nxScp\nxScp03_Com.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\smCom\smCom.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\smCom\smComT1oI2C.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phNxpEsePal_i2c.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phNxpEseProto7816_3.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phNxpEse_Api.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\platform\generic\sm_timer.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\se05x\src\se05x_ECC_curves.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\se05x\src\se05x_mw.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\se05x\src\se05x_tlv.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_APDU.c" />
+    <ClCompile Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_perso_api.c" />
+    <ClCompile Include="simw-top\sss\ex\src\ex_sss_boot.c" />
+    <ClCompile Include="simw-top\sss\ex\src\ex_sss_boot_connectstring.c" />
+    <ClCompile Include="simw-top\sss\ex\src\ex_sss_scp03_auth.c" />
+    <ClCompile Include="simw-top\sss\ex\src\ex_sss_se.c" />
+    <ClCompile Include="simw-top\sss\ex\src\ex_sss_se05x.c" />
+    <ClCompile Include="simw-top\sss\ex\src\ex_sss_se05x_auth.c" />
+    <ClCompile Include="simw-top\sss\ex\src\ex_sss_se_auth.c" />
+    <ClCompile Include="simw-top\sss\src\fsl_sss_apis.c" />
+    <ClCompile Include="simw-top\sss\src\fsl_sss_util_asn1_der.c" />
+    <ClCompile Include="simw-top\sss\src\fsl_sss_util_rsa_sign_utils.c" />
+    <ClCompile Include="simw-top\sss\src\keystore\keystore_cmn.c" />
+    <ClCompile Include="simw-top\sss\src\keystore\keystore_openssl.c" />
+    <ClCompile Include="simw-top\sss\src\keystore\keystore_pc.c" />
+    <ClCompile Include="simw-top\sss\src\mbedtls\fsl_sss_mbedtls_apis.c" />
+    <ClCompile Include="simw-top\sss\src\openssl\fsl_sss_openssl_apis.c" />
+    <ClCompile Include="simw-top\sss\src\se05x\fsl_sss_se05x_apis.c" />
+    <ClCompile Include="simw-top\sss\src\se05x\fsl_sss_se05x_eckey.c" />
+    <ClCompile Include="simw-top\sss\src\se05x\fsl_sss_se05x_mw.c" />
+    <ClCompile Include="simw-top\sss\src\se05x\fsl_sss_se05x_policy.c" />
+    <ClCompile Include="simw-top\sss\src\se05x\fsl_sss_se05x_scp03.c" />
+    <ClCompile Include="src\i2c_a7.cpp" />
+    <ClCompile Include="src\pkcs11_mbedtls_utils.c" />
+    <ClCompile Include="src\se050key.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="simw-top\hostlib\hostLib\libCommon\log\CMakeLists.txt" />
+    <Text Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_README.txt" />
+    <Text Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core_pkcs11.h" />
+    <ClInclude Include="LibFT260\inc\LibFT260.h" />
+    <ClInclude Include="simw-top\demos\linux\sss_pkcs11\greengrass_client_credential_keys.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\check_crypto_config.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\common.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_core.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_driver_wrappers.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_ecp.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_invasive.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_its.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_random_impl.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_rsa.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_se.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_service_integration.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_slot_management.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\psa_crypto_storage.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\ssl_invasive.h" />
+    <ClInclude Include="simw-top\ext\mbedtls\library\ssl_tls13_keys.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\a71ch_api.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\a71ch_util.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\a71cl_api.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\a71cl_util.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\Applet_SE050_Ver.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_api.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_common.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_common_a71ch.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_common_a71cl.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_common_private.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_scp.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_scp_private.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_sss_scp.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ax_util.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\HLSEAPI.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\HLSEComm.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\HLSECrypto.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\HLSEMisc.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\HLSEObjects.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\HLSETypes.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\ledHandler.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\modules.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\nxEnsure.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\nxScp03_Apis.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\nxScp03_Const.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\nxScp03_Types.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\PlugAndTrust_HostLib_Ver.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\PlugAndTrust_Pkg_Ver.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\scp.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\se05x_const.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\se05x_ecc_curves.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\se05x_ecc_curves_inc.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\se05x_ecc_curves_values.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\se05x_enums.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\se05x_ftr.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\se05x_tlv.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\SE_HAL_Lib.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\inc\sm_const.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\a71_debug.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\app_boot.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\app_boot_nfc.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\cm_commands.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\global_platf.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\sm_apdu.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\sm_api.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\sm_demo_utils.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\sm_errors.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\infra\sm_types.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_App.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_DefaultConfig.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_hostLib.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_mbedtls.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_scp.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_smCom.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_sscp.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_sss.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_UseCases.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_VCOM.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\apduComm.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\sci2c.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\sci2c_cfg.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smCom.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComJRCP.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComNxpNfcRdLib.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComPCSC.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComPN7150.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComSCI2C.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComSerial.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComSocket.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComT1oI2C.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smComThread.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\smUart.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phEseStatus.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phEseTypes.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phNxpEsePal_i2c.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phNxpEseProto7816_3.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phNxpEse_Api.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\libCommon\smCom\T1oI2C\phNxpEse_Internal.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\platform\inc\ax_reset.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\platform\inc\i2c_a7.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\platform\inc\se05x_apis.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\platform\inc\se_pit_config.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\platform\inc\se_reset_config.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\platform\inc\sm_printf.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\platform\inc\sm_timer.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_04_xx_APDU_apis.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_04_xx_APDU_impl.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_APDU.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_APDU_apis.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_APDU_impl.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_pake_APDU_apis.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_pake_APDU_impl.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_perso_api.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_perso_api_int.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_perso_cnst.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_T4T_APDU_apis.h" />
+    <ClInclude Include="simw-top\hostlib\hostLib\se05x_03_xx_xx\se05x_T4T_APDU_impl.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_a71ch_scp03.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_scp03_puf.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_auth.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_boot.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_cc_inc.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_freeRTOS_inc.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_inc.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_inc_frdmk64f.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_inc_imx_rt.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_inc_ksdk.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_inc_linux.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_inc_lpcxpresso55s.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_inc_nrf.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_main_inc_qn9090.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_objid.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_ports.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_scp03_keys.h" />
+    <ClInclude Include="simw-top\sss\ex\inc\ex_sss_tp_scp03_keys.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sscp.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sscp_a71ch.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sscp_a71cl.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sscp_commands.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sscp_mu.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_api.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_api_ver.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_base_apis.hpp" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_config.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_ftr_default.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_keyid_map.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_lpc55s_apis.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_lpc55s_types.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_mbedtls_apis.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_mbedtls_apis.hpp" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_mbedtls_types.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_openssl_apis.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_openssl_apis.hpp" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_openssl_types.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_policy.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_se05x_apis.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_se05x_apis.hpp" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_se05x_policy.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_se05x_scp03.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_se05x_types.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_sscp.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_sscp_apis.hpp" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_sscp_config.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_user_apis.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_user_types.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_util_asn1_der.h" />
+    <ClInclude Include="simw-top\sss\inc\fsl_sss_util_rsa_sign_utils.h" />
+    <ClInclude Include="simw-top\sss\port\default\fsl_sss_types.h" />
+    <ClInclude Include="simw-top\sss\port\default\sss_x86_mbedcrypto_config.h" />
+    <ClInclude Include="simw-top\sss\port\default\sss_x86_mbedtls_config.h" />
+    <ClInclude Include="src\core_pkcs11.h" />
+    <ClInclude Include="src\fsl_sss_ftr.h" />
+    <ClInclude Include="src\nxLog_pkcs11.h" />
+    <ClInclude Include="src\pkcs11_mbedtls_utils.h" />
+    <ClInclude Include="src\se050.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="simw-top\hostlib\hostLib\libCommon\infra\.mbedignore" />
+    <None Include="simw-top\hostlib\hostLib\libCommon\log\nxLog_Gen.bat" />
+    <None Include="simw-top\hostlib\hostLib\libCommon\smCom\.mbedignore" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
